@@ -261,7 +261,7 @@ def monthly_series(df: pd.DataFrame, year: int, months: list) -> list:
 inject_css()
 
 with st.sidebar:
-    st.markdown('<div style="font-weight:700; font-size:20px;">ProfitInsights AI</div>', unsafe_allow_html=True)
+    st.markdown('<div style="font-weight:700; font-size:20px;">Dashboard Margenes Servicios/Clientes</div>', unsafe_allow_html=True)
 
     uploaded = st.file_uploader("Subir archivo CSV / Excel", type=["csv", "xlsx", "xls"])
     if uploaded is not None:
@@ -288,7 +288,7 @@ with st.sidebar:
 raw_df = st.session_state.get("pi_raw")
 
 if raw_df is None:
-    st.markdown('<div class="pi-title">ProfitInsights AI</div>', unsafe_allow_html=True)
+    st.markdown('<div class="pi-title">Dashboard Margenes Servicios/Clientes</div>', unsafe_allow_html=True)
     st.markdown(
         '<div class="pi-subtitle">Sube tu archivo CSV o Excel desde el panel izquierdo para comenzar el análisis.</div>',
         unsafe_allow_html=True,
